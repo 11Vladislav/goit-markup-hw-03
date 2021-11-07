@@ -1,6 +1,7 @@
 /* Глобальные стили */
 
 body {
+  margin: 0;
   font-family: Roboto, sans-serif;
   color: #212121;
   letter-spacing: 0.03em;
@@ -11,16 +12,12 @@ body {
 .links a {
   text-decoration: none;
 }
-
 h1,
 h2,
 h3,
 h4,
-h5,
-h6,
-ul,
-p {
-  margin-top: 0;
+h6 {
+  margin: 0;
 }
 
 .visually-hidden {
@@ -42,13 +39,17 @@ p {
   --accent-hover-color: #2196f3;
   --secondary-color: #ffffff;
   --main-background-color: #2f303a;
+  --third-text-color: rgba(255, 255, 255, 0.6);
+  --shadow: rgba(0, 0, 0, 0.15);
+  --second-background-color: #f5f4fa;
 }
 
 .container {
   width: 1440px;
   margin: 0 auto;
-  padding: 0 15px;
-  outline: 2px dashed #f44336;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 2px solid tomato;
 }
 
 /* Логотип */
@@ -63,8 +64,11 @@ p {
 
 /* Стили навигации и баннера */
 
+.header {
+  /* background-color: lightcyan; */
+}
+
 .header-list {
-  padding-bottom: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -80,15 +84,12 @@ p {
   color: var(--dominant-color);
 }
 
-.connect-us {
-  padding-bottom: 32px;
-}
-
 .connect-link {
   color: var(--alt-text-color);
 }
 
 .hero {
+  padding-top: 200px;
   text-align: center;
   background-color: var(--main-background-color);
 }
@@ -100,21 +101,26 @@ p {
 .hero-heading {
   font-weight: 900;
   font-size: 44px;
-  text-align: center;
   line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  text-align: center;
   color: var(--secondary-color);
 }
 
 .hero-button {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  display: inline-block;
+  min-width: 200px;
+  box-shadow: 0px 4px 4px var(--shadow);
   border-radius: 4px;
   padding: 10px 32px;
+  margin-top: 40px;
+  margin-bottom: 200px;
   cursor: pointer;
   font-size: 16px;
   font-weight: 700;
   font-family: inherit;
+  text-align: center;
   line-height: 1.87;
   letter-spacing: 0.06em;
   background-color: var(--accent-hover-color);
@@ -136,20 +142,34 @@ p {
   color: var(--alt-text-color);
 }
 
-/* Стили активностей */
+/* Стили комманды */
+
+.activity {
+  background-color: var(--second-background-color);
+}
 
 .activity-heading {
+  text-align: center;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
 }
 
-/* Стили комманды */
-
 .team-list {
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  width: 370px;
+  padding: 30px 60px;
+  margin: 50px 30px;
+  text-align: center;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+}
+
+.specialist {
+  padding-top: 30px;
 }
 
 .position {
@@ -176,11 +196,17 @@ p {
 /* Стили кнопок */
 
 .button {
+  display: inline-block;
+  border-radius: 4px;
+  border: none;
+  padding: 6px 22px;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   font-family: inherit;
+  text-align: center;
   line-height: 1.62;
+  background-color: var(--second-background-color);
 }
 
 /* Стили контактов */
@@ -200,13 +226,24 @@ p {
   color: var(--secondary-color);
 }
 
+.footer-contacts {
+  padding: 60px 215px;
+}
+
 .contact-list {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--third-text-color);
 }
 
 /* Стили портфолио */
+.project-item {
+  width: 370px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 
 .portfolio-heading {
+  padding-left: 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -214,6 +251,8 @@ p {
 }
 
 .portfolio-description {
+  padding-left: 24px;
+  padding-bottom: 20px;
   font-size: 16px;
   line-height: 1.87;
   color: var(--alt-text-color);
