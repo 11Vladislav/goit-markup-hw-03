@@ -54,7 +54,7 @@
     <section class="portfolio container">
         <h1 class="visually-hidden">Наше портфолио
         </h1>
-    <ul>
+    <ul class="portfolio-buttons">
         <li><button type="button" class="button">Все</button></li>
         <li><button type="button" class="button">Веб сайты</button></li>
         <li><button type="button" class="button">Приложения</button></li>
@@ -62,7 +62,8 @@
         <li><button type="button" class="button">Маркетинг</button></li>
     </ul>
     <!-- Выполненные проекты     -->
-    <ul>
+    <ul class="projects">
+        <div class="break">
         <li class="project-item">
             <img src="./images/technokryak.jpg" 
             alt="технокряк" width="370"/>
@@ -81,12 +82,13 @@
             <h2 class="portfolio-heading">Ресторан<span lang="en"> Seafood</span></h2>
             <p class="portfolio-description">Приложение</p>
         </li>
+        </div>
+        <div class="break">
         <li class="project-item">
             <img src="./images/prime.jpg" 
             alt="наушники" width="370"/>
             <h2 class="portfolio-heading">Проект<span lang="en"> Prime</span></h2>
             <p class="portfolio-description">Маркетинг</p>
-        </li>
         <li class="project-item">
             <img src="./images/boxes.jpg" 
             alt="коробки" width="370"/>
@@ -99,6 +101,8 @@
             <h2 lang="en" class="portfolio-heading" lang="en">Inspiration has no Borders</h2>
             <p class="portfolio-description">Веб-сайт</p>
         </li>
+        </div>
+        <div class="break">
         <li class="project-item">
             <img src="./images/limited-edition.jpg" 
             alt="открытая книга" width="370"/>
@@ -117,14 +121,15 @@
             <h2 lang="en" class="portfolio-heading" lang="en">Growing Business</h2>
             <p class="portfolio-description">Приложение</p>
         </li>
+        </div>
     </ul>
     </section>
  </main>
     <!-- Подвал -->
-<footer class="footer lists links container">
-    <div class="footer-contacts">
-    <a class="webstudio-logo" href="./index.html" lang="en">
-    <span class="accent-color">Web</span><span class="logo-footer">Studio</span>
+<footer class="footer lists links">
+    <div class="footer-contacts container">
+    <a class="footer-logo" href="./index.html" lang="en">
+    <span class="accent-color">Web</span><span class="logo-alt">Studio</span>
     </a>
     <address class="address">
         <p class="location">
@@ -132,8 +137,10 @@
         </p>
         <a class="contact-list" href="mailto:info@example.com" lang="en">info@example.com
         </a>
+        <div class="break-in">
         <a class="contact-list" href="tel:+380991111111">+38 099 111 11 11
         </a>
+        </div>
     </div>
     </address>
 </footer>
