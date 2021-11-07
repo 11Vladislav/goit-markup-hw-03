@@ -55,6 +55,7 @@ h6 {
 /* Логотип */
 
 .webstudio-logo {
+  padding-left: 40px;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -161,7 +162,7 @@ h6 {
   border-radius: 0px 0px 4px 4px;
   width: 370px;
   padding: 30px 60px;
-  margin: 50px 30px;
+  margin-top: 50px;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
