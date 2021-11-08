@@ -8,6 +8,8 @@ body {
 }
 .lists ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 .links a {
   text-decoration: none;
@@ -56,12 +58,16 @@ ul {
   /* outline: 2px solid tomato; */
 }
 
+.flex {
+  display: flex;
+  align-items: center;
+}
+
 /* Логотип */
 
 .webstudio-logo {
-  display: inline-block;
+  display: block;
   margin-top: 24px;
-  margin-bottom: 25px;
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -75,8 +81,13 @@ ul {
   outline: 1px solid var(--header-border-color);
 }
 
+.main-nav {
+  display: flex;
+}
+
 .header-list {
   display: flex;
+  margin-left: 93px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -85,16 +96,21 @@ ul {
 }
 
 .list-item {
-  display: flex;
-  margin-right: 50px;
-  margin-bottom: 32px;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .list-item:last-child {
   margin-right: 0;
 }
 
+.list-item:first-child {
+  margin-left: 93px;
+}
+
 .list-link {
+  display: block;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -102,12 +118,26 @@ ul {
   color: var(--dominant-color);
 }
 
+.list-link:first-child {
+  margin-left: 48px;
+}
+
 .connect-us {
   display: flex;
 }
 
+.connect-item {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.connect-item:first-child {
+  margin-left: 245px;
+}
+
 .connect-link {
-  display: inline-block;
+  display: block;
   color: var(--alt-text-color);
 }
 
@@ -179,11 +209,13 @@ ul {
 
 .activity-list {
   margin-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--second-background-color);
 }
 
 .activity-heading {
   margin-top: 94px;
+  margin-bottom: 50px;
   text-align: center;
   font-weight: 700;
   font-size: 36px;
@@ -191,12 +223,20 @@ ul {
 }
 
 .work-gallery {
-  margin-top: 50px;
   display: flex;
 }
 
 .gallery-img {
   padding-right: 30px;
+}
+
+.our-team {
+  padding-top: 94px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
 }
 
 .team {
@@ -211,7 +251,7 @@ ul {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  width: 370px;
+  width: 270px;
   text-align: center;
   font-weight: 500;
   font-size: 16px;
@@ -252,7 +292,7 @@ ul {
 /* Стили кнопок */
 
 .button {
-  display: inline-block;
+  display: block;
   border-radius: 4px;
   margin-right: 8px;
   border: 1px solid transparent;
@@ -302,10 +342,16 @@ ul {
 
 /* Стили портфолио */
 
+.portfolio {
+  margin-top: 94px;
+}
+
 .portfolio-buttons {
-  padding-top: 94px;
-  margin-left: 280px;
   display: flex;
+}
+
+.portfolio-btn:first-child {
+  margin-left: 280px;
 }
 
 .break:last-child {
@@ -314,6 +360,9 @@ ul {
 
 .projects {
   display: flex;
+}
+
+.break {
   margin-top: 50px;
 }
 

@@ -15,51 +15,53 @@
 </head>
     <!-- Шапка страницы -->
 <body>
-<header class="lists links header">
-     
-    <!-- Навигация на другие страницы -->
-    <nav class="container">
-        <a class="webstudio-logo" href="./index.html" lang="en">
-            <span class="accent-color">Web</span>Studio
-        </a>
-        <ul class="header-list">
-            <li class="list-item">
-                <a class="list-link" href="./index.html">Студия
+    <header class="lists links header">
+        <!-- Навигация на другие страницы -->
+        <div class="container flex">
+            <nav class="main-nav">
+                <a class="webstudio-logo" href="./index.html" lang="en">
+                    <span class="accent-color">Web</span>Studio
                 </a>
-            </li>
-            <li class="list-item">
-                <a class="list-link current" href="./portfolio.html">Портфолио
-                </a>
-            </li>
-            <li >
-                <a class="list-link" href="#">Контакты
-                </a>
-            </li>
-        </ul>
-    </nav>
-    <!-- Связь с нами -->
-    <ul class="connect-us container">
-        <li class="list-item">
-            <a class="connect-link list-link" href="maito:info@devstudio.com">info@devstudio.com
-            </a>
-        </li>
-        <li class="list-item">
-            <a class="connect-link list-link" href="tel:+380961111111">+38 096 111 11 11
-            </a>
-        </li>
-    </ul>
-</header>
+                <ul class="header-list">
+                    <li class="list-item">
+                        <a class="list-link" href="./index.html">Студия
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="list-link current" href="./portfolio.html">Портфолио
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a class="list-link" href="#">Контакты
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Связь с нами -->
+    
+            <ul class="connect-us">
+                <li class="connect-item">
+                    <a class="connect-link list-link" href="maito:info@devstudio.com" lang="en">info@devstudio.com
+                    </a>
+                </li>
+                <li class="connect-item">
+                    <a class="connect-link list-link" href="tel:+380961111111">+38 096 111 11 11
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
     <!-- Навигация по проектам -->
  <main class="links lists">
     <section class="portfolio container">
         <h1 class="visually-hidden">Наше портфолио
         </h1>
     <ul class="portfolio-buttons">
-        <li><button type="button" class="button">Все</button></li>
-        <li><button type="button" class="button">Веб сайты</button></li>
-        <li><button type="button" class="button">Приложения</button></li>
-        <li><button type="button" class="button">Дизайн</button></li>
-        <li><button type="button" class="button">Маркетинг</button></li>
+        <li class="portfolio-btn"><button type="button" class="button">Все</button></li>
+        <li class="portfolio-btn"><button type="button" class="button">Веб сайты</button></li>
+        <li class="portfolio-btn"><button type="button" class="button">Приложения</button></li>
+        <li class="portfolio-btn"><button type="button" class="button">Дизайн</button></li>
+        <li class="portfolio-btn"><button type="button" class="button">Маркетинг</button></li>
     </ul>
     <!-- Выполненные проекты     -->
     <ul class="projects">
@@ -141,8 +143,8 @@
         <a class="contact-list" href="tel:+380991111111">+38 099 111 11 11
         </a>
         </div>
-    </div>
     </address>
+    </div>
 </footer>
 </body>
 </html>
