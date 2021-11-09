@@ -52,7 +52,7 @@ h6 {
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
 }
 
 .flex {
@@ -365,20 +365,11 @@ h6 {
   margin-left: 280px;
 }
 
-.break:last-child {
-  margin-bottom: 94px;
-}
-
 .projects {
   display: flex;
   flex-wrap: wrap;
   padding-left: 0;
   margin: 0;
-}
-
-.break {
-  margin-top: 34px;
-  background-color: lightsalmon;
 }
 
 .project-item {
