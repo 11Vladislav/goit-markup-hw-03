@@ -322,6 +322,8 @@ address {
 /* Стили контактов */
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background: var(--main-background-color);
 }
 
@@ -343,13 +345,9 @@ address {
   color: var(--secondary-color);
 }
 
-.footer-contacts {
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
 .location {
-  padding-top: 20px;
+  margin-top: 20px;
+  margin-bottom: 9px;
 }
 
 .contact-list {
@@ -365,7 +363,7 @@ address {
 .portfolio-buttons {
   display: flex;
   justify-content: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .portfolio-btn:not(:last-child) {
@@ -393,9 +391,11 @@ address {
   margin-bottom: 94px;
 }
 
+.portfolio-title {
+  padding: 20px 24px;
+}
+
 .portfolio-heading {
-  padding-top: 20px;
-  padding-left: 24px;
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -403,13 +403,11 @@ address {
 }
 
 .portfolio-description {
-  padding-left: 24px;
-  padding-bottom: 20px;
   font-size: 16px;
   line-height: 1.87;
   color: var(--alt-text-color);
 }
 
 .break-in {
-  padding-top: 9px;
+  margin-top: 9px;
 }
